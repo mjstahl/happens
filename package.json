@@ -1,7 +1,7 @@
 {
   "name": "occurred",
-  "version": "0.2.0",
-  "description": "Abstractions for communicating that something happened",
+  "version": "0.2.1",
+  "description": "Simple abstractions for communicating that something happened",
   "main": "index.js",
   "scripts": {},
   "repository": {
