@@ -1,0 +1,23 @@
+{
+  "name": "occurred",
+  "version": "0.1.0",
+  "description": "Abstractions for communicating that something happened",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjstahl/occurred.git"
+  },
+  "keywords": [
+    "events",
+    "signals",
+    "emitter",
+    "async"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mjstahl/occurred/issues"
+  },
+  "homepage": "https://github.com/mjstahl/occurred#readme"
+}
