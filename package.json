@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "description": "Abstractions for communicating that something happened",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mjstahl/occurred.git"
