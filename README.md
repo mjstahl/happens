@@ -20,17 +20,25 @@ semantically equivalent and accepts the same number of arguments.
 
 `.subscribe(<callback: Function>) -> <unsubscribe: Function>`
 
-Accepts a callback Function as an argument and returns an unsubscribe Function
-used to remove the callback Function as a listener. When the wrapper Function
-is executed, the callback function will be executed with the result.
+Accepts a callback function as an argument and returns an unsubscribe function
+used to remove the callback function as a listener.
+
+The callback function should accept two arguments. The 0th argument will be
+an instance of Error if an error occurred in the wrapper function. If no error
+occurred, the error argument will be null, and the 1st argument will be the
+result of the wrapper function's execution.
 
 ```js
   var called = require('occurred/called')
   var add = called(function (x, y) {
     return x + y
   })
-  var unsubscribe = add.subscribe(function (result) {
-    return console.log('Hello ' + result)
+  var unsubscribe = add.subscribe(function (err, result) {
+    if (err !== null) {
+      console.log('Uh oh ', err)
+      return
+    }
+    console.log('Hello ', result)
   })
   add(2, 3)
 

@@ -2,13 +2,17 @@ module.exports = function(compute) {
   var handlers = [];
 
   var fn = function() {
-    var result = compute.apply(this, arguments);
+    var error = null, result = null, self = this;
+    try {
+      result = compute.apply(this, arguments);
+    } catch (e) {
+      error = e;
+    }
     // Ensure the subscriber's handlers are called after the
     // result is returned to the caller
-    var self = this;
     setTimeout(function() {
       handlers.forEach(function(handler) {
-        handler.call(self, result);
+        handler.call(self, error, result);
       });
     }, 0);
 
