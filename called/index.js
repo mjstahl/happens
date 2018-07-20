@@ -15,7 +15,7 @@ module.exports = function(compute) {
     return result;
   };
 
-  fn.subscribe = function(callback, errback) {
+  fn.subscribe = function(callback) {
     handlers.push(callback);
     // Return the method of unsubscribing as a result of
     // subscribing
