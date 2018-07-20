@@ -13,8 +13,8 @@ semantically equivalent and accepts the same number of arguments.
   var add = called(function (x, y) {
     return x + y
   })
-  add(2, 3) 
-  
+  add(2, 3)
+
   //-> 5
 ```
 
