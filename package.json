@@ -4,7 +4,6 @@
   "description": "Simple abstractions for communicating that something happened",
   "main": "index.js",
   "scripts": {
-    "publish": "npm publish --access='public'"
   },
   "repository": {
     "type": "git",
