@@ -1,6 +1,6 @@
 {
   "name": "@mjstahl/occurred",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "description": "Simple abstractions for communicating that something happened",
   "main": "index.js",
   "scripts": {},
