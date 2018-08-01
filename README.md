@@ -1,7 +1,17 @@
 # Occurred
 Simple abstractions for communicating that something happened.
 
+## Installation
+
+```js
+$ npm install --save @mjstahl/occurred
+```
+
 ## occurred/called
+
+```js
+const called = require('@mjstahl/occurred/called')
+```
 
 `called(<toExecute: Function>) -> <wrapped: Function>`
 
@@ -9,7 +19,6 @@ Take a single Function argument and returns a wrapped Function that is
 semantically equivalent and accepts the same number of arguments.
 
 ```js
-  var called = require('occurred/called')
   var add = called(function (x, y) {
     return x + y
   })
@@ -29,7 +38,6 @@ occurred, the error argument will be null, and the 1st argument will be the
 result of the wrapper function's execution.
 
 ```js
-  var called = require('occurred/called')
   var add = called(function (x, y) {
     return x + y
   })
