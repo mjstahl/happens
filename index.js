@@ -1,5 +1,5 @@
-var called = require('./called/');
+const called = require('@mjstahl/called');
 
 module.exports = {
-  called: called,
+  called,
 };
