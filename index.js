@@ -1,5 +1,5 @@
-const called = require('@mjstahl/called');
+const called = require('@mjstahl/called')
 
 module.exports = {
-  called,
-};
+  called
+}
